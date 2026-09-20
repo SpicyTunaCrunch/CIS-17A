@@ -1,4 +1,3 @@
-// Lab 6 kiloConverter.cpp 
 // This menu-driven program lets the user convert 
 // pounds to kilograms and kilograms to pounds.
 // Luis Roldan
@@ -22,9 +21,9 @@ int main()
         choice = getChoice();
         switch (choice){
         case 1 : 
-            cout << "Pounds = " << kilos2lbs() << endl; break;
+            cout << kilos2lbs() << endl; break;
         case 2 : 
-            cout << "Kilos = " << lbs2kilos() << endl; break;
+            cout << lbs2kilos() << endl; break;
         }
 
   }while (choice != 3);  
@@ -56,6 +55,7 @@ double kilos2lbs(){
             "How many kilos? ";
     cin >> k;
     lbs = k * 2.20462;
+    cout << " Punds = ";
     return lbs;
 }
 double lbs2kilos(){
@@ -65,5 +65,6 @@ double lbs2kilos(){
             "How many pounds? ";
     cin >> lbs;
     k = lbs / 2.20462;
+    cout << "Kilos = ";
     return k;
 }
