@@ -46,10 +46,11 @@ class Moon                    //Class -> class , removed ;
 };
 
 int main (){
+
    double earth;
    cout << "What is your weight? ";
    cin >> earth;
-
+ //  int earth = 190;
    Moon lunar(earth);
 
    cout << "On the moon you would weigh " << lunar.getMoonWeight() << endl;    
