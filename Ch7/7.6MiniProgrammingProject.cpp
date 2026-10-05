@@ -78,6 +78,7 @@ int main (){
             "The second accessor function works!\n" << 
             disDate3.getDay() << " " << disDate3.getWord() << " " << disDate3.getYear() << endl <<
             "The third accessor function works!\n\n";
+            
     //output 4
     Date disDate4(77, 21, 1996);
     
@@ -89,6 +90,14 @@ int main (){
     cout << "Testing the 3 parameter function with 11/-26/55 which generates an error and causes the object to contain 1/1/01\n" <<
             "Recalling the contents of the object: " << disDate5.getMonth() << "/" << disDate5.getDay() << "/" << setfill('0') << setw(2) << ( disDate5.getYear() % 100 ) << endl <<
             "See it works!\n\n";
+            
+        //output 5
+    Date disDate6(6, 30, 1785);
+    cout << "Testing the other accessor functions \n" << 
+            disDate6.getWord() << " " << disDate6.getDay() << ", " << disDate6.getYear() << endl <<
+            "The second accessor function works!\n" << 
+            disDate6.getDay() << " " << disDate6.getWord() << " " << disDate6.getYear() << endl <<
+            "The third accessor function works!\n\n";
     
     return 0;
 }
