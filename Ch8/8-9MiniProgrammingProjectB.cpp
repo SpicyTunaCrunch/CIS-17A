@@ -14,7 +14,7 @@ int numOnes(int, int[]);
 int numTwos(int, int[]);
 int numThrees(int, int[]);
 int numFours(int, int[]);
-int numFive(int, int[]);
+int numFives(int, int[]);
 int numSixes(int, int[]);
 
 int main (){
@@ -24,19 +24,21 @@ int main (){
     const int SIZE = 100;
     int results[SIZE];
 
+    cout << "\nRolling Dice 100 times\n" << endl;
     rollDie( SIZE, results);
     
     //Dipsplaying results for each number on die
-    cout << "Displaying results for 100 dice rolls\n"
-            "Quantity of Ones: " <<  numOnes(SIZE, results) << endl <<
-            "Quantity of Twos: " << numTwos(SIZE, results) << endl << 
-            "Quantity of Threes: " << numThrees(SIZE, results) << endl << 
-            
-    numFours(SIZE, results);
-    numFives(SIZE, results);
-    numSixes(SIZE, results);
+    cout << "  Talling up results\n" << 
+            "Quantity of 1's rolled: " <<  numOnes(SIZE, results) << endl <<
+            "Quantity of 2's rolled: " << numTwos(SIZE, results) << endl << 
+            "Quantity of 3's rolled: " << numThrees(SIZE, results) << endl << 
+            "Quantity of 4's rolled: " << numFours(SIZE, results) << endl << 
+            "Quantity of 5's rolled: " << numFives(SIZE, results) << endl <<
+            "Quantity of 6's rolled: " << numSixes(SIZE, results) << endl;
 
-
+    //making sure it was 100 rolls
+    //cout << "**** test **** " << (numOnes(SIZE, results) + numTwos(SIZE, results) + numThrees(SIZE, results) + numFours(SIZE, results) + numFives(SIZE, results) + numSixes(SIZE, results)) << endl;
+    return 0;
 
 }
 void rollDie(int SIZE, int arr[]){
