@@ -16,7 +16,9 @@ int main(){
         car1.accelerate();
         cout << "Current Speed: " << car1.getSpeed();
     }
-    cout << endl;
+    cout << endl << endl;
+    cout << "** Stop sign ahead ** " << endl << endl <<
+            "Current Speed: " << car1.getSpeed() << endl << endl;
     //decelerating 5 times
     for (int i = 5; i > 0; i--){
         cout << "\nBreaking!\n";

@@ -8,22 +8,31 @@ using namespace std;
 // Function prototypes
 void displayMenu();
 int getChoice();
-double kilos2lbs();
-double lbs2kilos();
+double kilos2lbs(double);
+double lbs2kilos(double);
 
 /*****     main     *****/
 int main()
 {
     cout << fixed << showpoint << setprecision(2);
     int choice;
+    double weight;
     do {
         displayMenu();
         choice = getChoice();
         switch (choice){
         case 1 : 
-            cout << kilos2lbs() << endl; break;
-        case 2 : 
-            cout << lbs2kilos() << endl; break;
+            cout << "Kilos --> Pounds\n" <<
+            "How many kilos? ";
+            cin >> weight;
+            cout << "Pounds = "<< kilos2lbs(weight) << endl;
+            break;
+        case 2 :
+            cout << "Pounds --> Kilos\n" <<
+            "How many pounds? ";
+            cin >> weight;
+            cout << "Kilos = " << lbs2kilos(weight) << endl;
+            break;
         }
 
   }while (choice != 3);  
@@ -48,23 +57,13 @@ int getChoice(){
         cin >> c;
     }return c;
 }
-double kilos2lbs(){
+double kilos2lbs(double w){
     double k;
-    double lbs; 
-    cout << "Kilos --> Pounds\n" <<
-            "How many kilos? ";
-    cin >> k;
-    lbs = k * 2.20462;
-    cout << " Punds = ";
-    return lbs;
+    k = w * 2.2;
+    return k;
 }
-double lbs2kilos(){
+double lbs2kilos(double w){
     double k;
-    double lbs; 
-    cout << "Pounds --> Kilos\n" <<
-            "How many pounds? ";
-    cin >> lbs;
-    k = lbs / 2.20462;
-    cout << "Kilos = ";
+    k = w / 2.2;
     return k;
 }
