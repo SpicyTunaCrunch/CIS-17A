@@ -6,11 +6,11 @@ Luis Roldan
 #include "Dice.h"
 
 int main (){
-    Dice vect;
+    Dice dice;
 
-    vect.roll100();
-    vect.calculateRolls();
-    vect.printDice();
+    dice.roll100();
+    dice.calculateRolls();
+    dice.printDice();
 
     return 0;
 }

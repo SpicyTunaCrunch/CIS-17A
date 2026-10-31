@@ -7,7 +7,8 @@ using namespace std;
 //Dice class delcaration
 class Dice{
     private :
-        vector<int> vect;
+        vector<int> dice;
+        int SIZE;
     public :
         Dice();
         void roll100();
