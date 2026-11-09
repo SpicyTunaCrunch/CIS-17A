@@ -1,29 +1,20 @@
-/*Coin.h is the Coin class specifications
-Luis Roldan
-Just finished CIS 17A's Midterm 
-This is my attempt to recreate my project to make sure i = understand
+/*
+Coin.h is the Coin class Specfication file
 */
-
 #ifndef COIN_H
 #define COIN_H
-#include <vector>
-#include <string>
+#include <vector> 
 using namespace std;
 
 class Coin{
-    private :
-        vector <string> sides;
-        int Size;
+    private : 
+        vector<int> coin;
+        int SIZEE;
     public :
         Coin();
-        Coin(int s);
-        void tossCoin();
-        void setSize();
-        
+        void setTosz();
         void calcTosz();
-        void disTosz();
-        string getSide();
-        
-
+        void displayTosz();
 };
+
 #endif
