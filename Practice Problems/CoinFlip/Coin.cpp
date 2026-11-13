@@ -12,7 +12,7 @@ using namespace std;
 Coin :: Coin() : SIZEE(100) , coin(SIZEE, 0) {
 }
 void Coin :: setTosz(){
-        //setting random number seed suing the current time 
+        //setting random number seed using the current time 
     srand(static_cast<unsigned int>(time(0)));
         //assigning each elemnt of vector coin with a 0 
     for (int i = 0; i < SIZEE; i++){
