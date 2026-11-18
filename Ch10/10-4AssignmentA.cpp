@@ -12,10 +12,10 @@
 
     cout << x << " " << y << " "  << z << " " << endl;
 
-    ptr = &x;
-    *ptr *=10;
-    ptr = &y;
-    *ptr *= 5;
+    ptr = &x;     //assigning ptr to the memory address of x         
+    *ptr *=10;    //dereferences ptr address so that the *= opperator multiplies 10 to the value that is being held in the memory location 
+    ptr = &y;     
+    *ptr *= 5;   
     ptr = &z;
     *ptr *= 2;
 

@@ -10,7 +10,7 @@ int main() {
 
    // Make numPtr point to the set array.
    numPtr = set;
-	
+
    // Use the pointer to display the array elements
    cout << "The numbers in set are:\n";
    for (int index = 0; index < SIZE; index++) {
